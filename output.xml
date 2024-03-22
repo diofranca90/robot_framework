@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-03-22T11:14:00.585632" rpa="false" schemaversion="5">
+<suite id="s1" name="02-Cadastro Incorreto" source="c:\Users\diorgenes.oliveira\Desktop\Robot Framework\testes\02-cadastro_incorreto.robot">
+<test id="s1-t1" name="Criando um cadastro incorreto" line="9">
+<kw name="Dado que eu acesse o Alurapic" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:00.804779" level="INFO">Opening browser 'Chrome' to base url 'https://3076-cypress-alurapic-front.vercel.app/#/home'.</msg>
+<arg>url=https://3076-cypress-alurapic-front.vercel.app/#/home</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-22T11:14:00.804779" elapsed="4.461525"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:00.804779" elapsed="4.461525"/>
+</kw>
+<kw name="quando clico em criar usuário" owner="cadastro">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:05.271531" level="INFO">Clicking element 'xpath=//*[@data-test="register"]'.</msg>
+<arg>xpath=//*[@data-test="register"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T11:14:05.266304" elapsed="0.185825"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:05.266304" elapsed="0.185825"/>
+</kw>
+<kw name="e clico em registrar sem preencher os dados" owner="cadastro">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:05.453062" level="INFO">Clicking button 'xpath=//*[@data-test="btnRegister"]'.</msg>
+<arg>xpath=//*[@data-test="btnRegister"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T11:14:05.453062" elapsed="0.147867"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:05.600929" level="INFO">Clicking button 'xpath=//*[@data-test="btnRegister"]'.</msg>
+<arg>xpath=//*[@data-test="btnRegister"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-22T11:14:05.600929" elapsed="0.162706"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-22T11:14:10.770260" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-22T11:14:05.769706" elapsed="5.000554"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:05.453062" elapsed="5.317198"/>
+</kw>
+<kw name="então a mensagem de campo obrigatório é apresentada" owner="cadastro">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:10.848350" level="INFO">Element 'xpath=//*[@text="Email is required!"]' is displayed.</msg>
+<arg>xpath=//*[@text="Email is required!"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-22T11:14:10.773775" elapsed="0.074575"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:10.913976" level="INFO">Element 'xpath=//*[@text="Full name is required!"]' is displayed.</msg>
+<arg>xpath=//*[@text="Full name is required!"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-22T11:14:10.848350" elapsed="0.065626"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:10.973699" level="INFO">Element 'xpath=//*[@text="User name is required!"]' is displayed.</msg>
+<arg>xpath=//*[@text="User name is required!"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-22T11:14:10.913976" elapsed="0.059723"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-22T11:14:11.030115" level="INFO">Element 'xpath=//*[@text="Password is required!"]' is displayed.</msg>
+<arg>xpath=//*[@text="Password is required!"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-22T11:14:10.973699" elapsed="0.056416"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-22T11:14:16.030778" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-22T11:14:11.030115" elapsed="5.001598"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:10.770260" elapsed="5.261453"/>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-22T11:14:16.031713" elapsed="2.395542"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:16.031713" elapsed="2.397131"/>
+</kw>
+<status status="PASS" start="2024-03-22T11:14:00.804779" elapsed="17.624739"/>
+</test>
+<status status="PASS" start="2024-03-22T11:14:00.590175" elapsed="17.839343"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="02-Cadastro Incorreto">02-Cadastro Incorreto</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
